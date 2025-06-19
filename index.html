@@ -1,0 +1,159 @@
+    <!DOCTYPE html>
+    <html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="src/styles/styles.css">
+        <title>Formulário</title>
+    </head>
+    <body>
+
+        <main id="form_container">
+            <div id="form_header"> 
+            
+                <h1 id="form_title">
+                    Increver-se
+                </h1>
+
+    <button class="btn-default" onclick="window.location.href='setembro_amarelo.html'">
+        Já se inscreveu  <i class="fa-solid fa-right-to-bracket"></i>
+    </button>
+
+
+
+            </div>
+            <form action="" id="form"> 
+                <div id="input_container">  
+
+                    <div class="input_box">
+                        <label for="name" class="form-label">
+                            Nome completo
+                        </label>
+                        <div class="input-field">
+                            <input type="text" name="name" id="name" class="form-control" placeholder="Samuel Da Silva "
+                            >
+                            <i class="fa-regular fa-user"></i>
+                        </div>
+                        <span class="error"></span>
+                    </div>
+
+    
+
+                                    
+                    <div class="input_box">
+                        <label for="birthdate" class="form-label">
+                            Nascimento
+                        </label>
+                        <div class="input-field">
+                            <input type="date" name="birthdate" id="birthdate" class="form-control" 
+                            
+                            >
+                        </div>
+                        <span class="error"></span>
+                    </div>
+
+                    <div class="input_box">
+                        <label for="email" class="form-label">
+                            E-mail
+                        </label>
+                        <div class="input-field">
+                            <input type="email" name="email" id="email" class="form-control" placeholder="exemplo@gmail.com"
+                            
+                            >
+                            <i class="fa-regular fa-envelope"></i>
+                        </div>
+                        <span class="error"></span>
+                    </div>
+
+                                <div class="input_box">
+                        <label for="bairro" class="form-label">
+                            Bairro
+                        </label>
+                        <div class="input-field">
+                            <input type="text" name="bairro" id="bairro" class="form-control" placeholder="Rua Dos alfaiates"
+                            >
+                            <i class="fa-regular fa-user"></i>
+                        </div>
+                        <span class="error"></span>
+                    </div>
+
+                    <div class="input_box">
+                        <label for="alunos_estacio" class="form-label">
+                            Aluno estacio
+                        </label>
+                        <div class="input-field">
+                        <select name="alunos_estacio" id="alunos_estacio" class="form-control">
+                                <option value="" disabled selected>Sim/Não</option>
+                                <option value="sim">Sim</option>
+                                <option value="nao">Não</option>
+                            </select>
+                        <i class="fa-regular fa-user"></i>
+                        </div>
+                        <span class="error"></span>
+                    </div>
+
+        
+    
+    <div class="input_box">
+     <label for="comorbidade" class="form-label">Comorbidades</label>
+      <div class="input-field">
+      <select name="comorbidade" id="comorbidade" class="form-control">
+      <option value="" disabled selected>Selecione uma comorbidade</option>
+      <option value="nao">Não possuo comorbidades</option>
+      <option value="hipertensao">Hipertensão arterial</option>
+      <option value="diabetes">Diabetes</option>
+      <option value="doenca_cardiaca">Doença cardíaca</option>
+      <option value="doenca_respiratoria">Doença respiratória crônica</option>
+      <option value="obesidade">Obesidade</option>
+      <option value="cancer">Câncer</option>
+      <option value="doenca_renal">Doença renal crônica</option>
+      <option value="doenca_hepatica">Doença hepática crônica</option>
+      <option value="imunossupressao">Imunossupressão</option>
+      <option value="doenca_neurologica">Doença neurológica crônica</option>
+      <option value="outros">Outros</option>
+    </select>
+    <i class="fa-regular fa-user"></i>
+  </div>
+  <span class="error"></span>
+    </div>
+                    
+                    <div class="radio-container">
+                        <label class="form-label">
+                            Gênero
+                    </label>
+                    <div id="gender_inputs">
+                        <div class="radio-box">
+                            <input type="radio" name="gender" id="female" class="form-control" value="female">
+                            <label for="female" class="form-label">
+                                Feminino 
+                            </label>
+
+                        </div>
+                        <div class="radio-box">
+                            <input type="radio" name="gender" id="male" class="form-control" value="male">
+                            <label for="male" class="form-label">
+                                Masculino
+                            </label>
+                        </div>
+                        <div class="radio-box">
+                            <input type="radio" name="gender" id="others" class="form-control" value="others">
+                            <label for="others" class="form-label">
+                                Outros
+                            </label>
+                        </div>
+                        <span class="error"></span>
+                    </div>
+                </div>
+                
+                <button type="submit" class="btn-default">
+                    <i class="fa-solid fa-check"> </i>
+                    Inscreva-se
+                </button>
+            </form>
+        </main>  
+        
+        <script src="src/javascript/script.js"></script>
+
+    </body>
+    </html>
